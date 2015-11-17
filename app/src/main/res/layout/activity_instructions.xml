@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/leaderboard_wallpaper"
+    tools:context="com.afssurani.sungka.HighscoresActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/hscoretitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/highscoretitle"
+        android:textColor="#f7ffff"
+        android:textIsSelectable="false"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <!-- First linear layout with gold medal and containing another linear layout-->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal">
+
+
+        <ImageView
+            android:id="@+id/goldAwardImager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gold_medal" />
+        <!-- gold player info -->
+        <LinearLayout
+            android:id="@+id/insideLinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:id="@+id/firstPersonsName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="59dp"
+                android:layout_marginRight="59dp"
+                android:text="@string/firstScore"
+                android:textColor="#fffc1c"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/highScore1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/firstHighScore"
+                android:textColor="#fffc1c"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/firstWinLossRatio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/first_wins"
+                android:textColor="#fffc1c"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Second linear layout with silver medal and containing another linear layout-->
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical|center_horizontal">
+
+        <ImageView
+            android:id="@+id/silverAwardImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/silver_medal" />
+        <!-- Silver player info -->
+        <LinearLayout
+            android:id="@+id/insideLinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:id="@+id/secondPersonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/secondScore"
+                android:textColor="#fffc1c"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/highScore2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/secondHighScore"
+                android:textColor="#fffc1c"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/secondWinLossRatio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/second_wins"
+                android:textColor="#fffc1c"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- Third linear layout with bronze medal and containing another linear layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout2"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical|center_horizontal">
+
+        <ImageView
+            android:id="@+id/bronzeAwardImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bronze_medal" />
+        <!-- Bronze player info -->
+        <LinearLayout
+            android:id="@+id/insideLinearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+
+            <TextView
+                android:id="@+id/thirdPersonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/thirdScore"
+                android:textColor="#fffc1c"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/highScore3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/thirdHighScore"
+                android:textColor="#fffc1c"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/thirdWinLossRatio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/third_wins"
+                android:textColor="#fffc1c"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

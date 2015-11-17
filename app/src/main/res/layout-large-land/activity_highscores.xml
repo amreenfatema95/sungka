@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/leaderboard_wallpaper"
+    tools:context="com.afssurani.sungka.HighscoresActivity">
+
+
+    <TextView
+        android:id="@+id/hscoretitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/highscoretitle"
+        android:textColor="#f7ffff"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textIsSelectable="false" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/goldAwardImager"
+        android:src="@drawable/gold_medal"
+        android:layout_below="@+id/hscoretitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="51dp"
+        android:layout_alignRight="@+id/silverAwardImage"
+        android:layout_alignEnd="@+id/silverAwardImage" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/silverAwardImage"
+        android:src="@drawable/silver_medal"
+        android:layout_alignTop="@+id/secondPersonName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bronzeAwardImage"
+        android:src="@drawable/bronze_medal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/firstScore"
+        android:id="@+id/firstPersonsName"
+        android:layout_alignTop="@+id/goldAwardImager"
+        android:layout_alignRight="@+id/hscoretitle"
+        android:layout_alignEnd="@+id/hscoretitle"
+        android:layout_marginRight="59dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginTop="53dp"
+        android:textStyle="italic"
+        android:textColor="#fffc1c"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/firstHighScore"
+        android:id="@+id/highScore1"
+        android:layout_below="@+id/firstPersonsName"
+        android:layout_alignLeft="@+id/firstPersonsName"
+        android:layout_alignStart="@+id/firstPersonsName"
+        android:textStyle="italic"
+        android:textColor="#fffc1c"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/first_wins"
+        android:id="@+id/firstWinLossRatio"
+        android:layout_below="@+id/highScore1"
+        android:layout_alignLeft="@+id/highScore1"
+        android:layout_alignStart="@+id/highScore1"
+        android:textStyle="italic"
+        android:textColor="#fffc1c"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/secondScore"
+        android:id="@+id/secondPersonName"
+        android:textStyle="italic"
+        android:textColor="#fffc1c"
+        android:textSize="30sp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/firstWinLossRatio"
+        android:layout_alignStart="@+id/firstWinLossRatio"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/secondHighScore"
+        android:id="@+id/highScore2"
+        android:layout_below="@+id/secondPersonName"
+        android:layout_alignLeft="@+id/secondPersonName"
+        android:layout_alignStart="@+id/secondPersonName"
+        android:textStyle="italic"
+        android:textColor="#fffc1c"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/second_wins"
+        android:id="@+id/secondWinLossRatio"
+        android:layout_below="@+id/highScore2"
+        android:layout_alignLeft="@+id/highScore2"
+        android:layout_alignStart="@+id/highScore2"
+        android:textStyle="italic"
+        android:textColor="#fffc1c"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thirdScore"
+        android:id="@+id/thirdPersonName"
+        android:textStyle="italic"
+        android:textColor="#fffc1c"
+        android:textSize="30sp"
+        android:layout_alignTop="@+id/bronzeAwardImage"
+        android:layout_alignRight="@+id/firstPersonsName"
+        android:layout_alignEnd="@+id/firstPersonsName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thirdHighScore"
+        android:id="@+id/highScore3"
+        android:layout_below="@+id/thirdPersonName"
+        android:layout_alignLeft="@+id/secondWinLossRatio"
+        android:layout_alignStart="@+id/secondWinLossRatio"
+        android:textStyle="italic"
+        android:textColor="#fffc1c"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/third_wins"
+        android:id="@+id/thirdWinLossRatio"
+        android:layout_below="@+id/highScore3"
+        android:layout_alignLeft="@+id/highScore3"
+        android:layout_alignStart="@+id/highScore3"
+        android:textStyle="italic"
+        android:textColor="#fffc1c"
+        android:textSize="30sp"/>
+
+
+</RelativeLayout>

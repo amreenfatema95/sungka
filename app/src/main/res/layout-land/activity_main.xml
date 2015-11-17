@@ -1,0 +1,199 @@
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_wood"
+    >
+
+    <TextView
+        android:id="@+id/player1text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/player_1"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:textSize="40sp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/player2text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/player_2"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp"
+        android:textSize="40sp"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/storep2"
+        android:layout_alignEnd="@+id/storep2"
+        android:layout_marginBottom="24dp">
+    </TextView>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width = "wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/p1row"
+        android:layout_alignTop="@+id/storep2"
+
+        android:layout_toLeftOf="@+id/storep2"
+        android:layout_toRightOf="@+id/storep1"
+        android:layout_toEndOf="@+id/storep1"
+        android:layout_centerHorizontal="true">
+
+        <!-- Button trays for player 1, with id name convention "trayApB" where A is the tray nr and B is the player nr. -->
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/tray0p1"
+            android:background="@drawable/button1_blue_p7"
+            android:layout_weight="1"
+            android:textColor="#f8faf8" />
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/tray1p1"
+            android:background="@drawable/button1_blue_p7"
+            android:layout_weight="1"
+            android:textColor="#f8faf8" />
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/tray2p1"
+            android:background="@drawable/button1_blue_p7"
+            android:layout_weight="1"
+            android:textColor="#f8faf8" />
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/tray3p1"
+            android:background="@drawable/button1_blue_p7"
+            android:layout_weight="1"
+            android:textColor="#f8faf8" />
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/tray4p1"
+            android:layout_gravity="center"
+            android:background="@drawable/button1_blue_p7"
+            android:layout_weight="1"
+            android:textColor="#f8faf8" />
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/tray5p1"
+            android:background="@drawable/button1_blue_p7"
+            android:layout_weight="1"
+            android:minWidth="55dp"
+            android:longClickable="true"
+            android:textColor="#f8faf8" />
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/tray6p1"
+            android:background="@drawable/button1_blue_p7"
+            android:layout_weight="1"
+            android:textColor="#f8faf8" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/p2row"
+        android:layout_below="@+id/p1row"
+        android:layout_alignLeft="@+id/p1row"
+        android:layout_alignStart="@+id/p1row"
+        android:layout_toLeftOf="@+id/storep2"
+        android:layout_toStartOf="@+id/storep2"
+        android:layout_centerHorizontal="true">
+
+        <!-- Button trays for player 2, same naming convention -->
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/tray0p2"
+            android:background="@drawable/button2_red_p7"
+            android:layout_weight="1"
+
+            android:textColor="#f8faf8" />
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/tray1p2"
+            android:background="@drawable/button2_red_p7"
+            android:layout_weight="1"
+            android:textColor="#f8faf8" />
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/tray2p2"
+            android:background="@drawable/button2_red_p7"
+            android:layout_weight="1"
+            android:textColor="#f8faf8" />
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/tray3p2"
+            android:background="@drawable/button2_red_p7"
+            android:layout_weight="1"
+            android:textColor="#f8faf8" />
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/tray4p2"
+            android:background="@drawable/button2_red_p7"
+            android:layout_weight="1"
+            android:textColor="#f8faf8" />
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/tray5p2"
+            android:background="@drawable/button2_red_p7"
+            android:layout_weight="1"
+            android:textColor="#f8faf8" />
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/tray6p2"
+            android:background="@drawable/button2_red_p7"
+            android:layout_weight="1"
+            android:textColor="#f8faf8" />
+    </LinearLayout>
+
+    <!-- Player stores -->
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:id="@+id/storep1"
+        android:layout_gravity="center"
+        android:background="@drawable/button1_blue_p0"
+        android:layout_alignTop="@+id/p1row"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#f8faf8" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:id="@+id/storep2"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button2_red_p0"
+
+        android:textColor="#f8faf8" />
+
+
+</RelativeLayout>

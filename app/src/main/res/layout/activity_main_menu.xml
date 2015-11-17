@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg_menu"
+    tools:context="com.afssurani.sungka.MainMenuActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:contentDescription="@string/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imageView"
+            android:src="@drawable/sungka"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/single"
+            android:hint="Play against the AI!"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/singleplayer"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="69dp"
+            android:layout_weight="1"
+            android:background="@drawable/menu_item"
+            android:onClick="singlePlayerBoard"/>
+
+        <Button
+            android:id="@+id/singledevice"
+            android:hint="Play against a friend, on the same device."
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/ondevice"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/menu_item"
+            android:onClick="twoPlayerBoard"
+            />
+
+        <Button
+            android:id="@+id/multi"
+            android:hint="Play against a friend online!."
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:text="@string/multiplayer"
+            android:background="@drawable/menu_item"
+            android:onClick="multiPlayerBoard"
+            />
+
+
+
+
+        <Button
+            android:id="@+id/highscore"
+            android:hint="Check who's on top of the highscores!"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:text="@string/highscores"
+            android:layout_marginBottom="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/menu_item"
+            android:onClick="highScoreScreen"
+            />
+
+        <Button
+            android:id="@+id/instuctions"
+            android:hint="Find out how to play!"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/title_activity_instructions"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:background="@drawable/menu_item"
+            android:onClick="instructions" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
